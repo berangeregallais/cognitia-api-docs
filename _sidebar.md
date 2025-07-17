@@ -1,9 +1,10 @@
 * [🏠 Home](/README.md)
-* [❓ FAQ](/faq.md)
-* [📘 Spécification OpenAPI](/openapi-cognitia.json)
-
+* [🚀 Getting Started](/getting-started.md)
+  
 * 📚 Endpoints
   * [🔹 /summarize](/Endpoints/summarize.md)
   * [🔹 /extract](/Endpoints/extract.md)
   * [🔹 /keywords](/Endpoints/keywords.md)
 
+* [❓ FAQ](/faq.md)
+* [📘 OpenAPI Specs](/openapi-cognitia.json)
