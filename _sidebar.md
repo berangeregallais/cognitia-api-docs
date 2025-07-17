@@ -2,9 +2,9 @@
 * [🚀 Getting Started](/getting-started.md)
   
 * 📚 Endpoints
-  * [🔹 /summarize](/endpoints/summarize.md)
-  * [🔹 /extract](/endpoints/extract.md)
-  * [🔹 /keywords](/endpoints/keywords.md)
+  * [🔹 Sentiment Analysis ](/endpoints/sentiment.md)
+  * [🔹 Summarize Text ](/endpoints/summarize.md)
+  * [🔹 Detect Bias ](/endpoints/bias.md)
 
 * [❓ FAQ](/faq.md)
 * [📘 OpenAPI Specs](/openapi-cognitia.json)
