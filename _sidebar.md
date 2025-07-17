@@ -7,4 +7,4 @@
   * [🔹 Detect Bias](/endpoints/bias.md)
 
 * [❓ FAQ](/faq.md)
-* [📘 OpenAPI Specs](/openapi-cognitia.json)
+* [📘 OpenAPI Specs](https://berangeregallais.github.io/cognitia-api-docs/openapi-cognitia.json)
