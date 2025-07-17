@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css">
 <head>
   <meta charset="UTF-8">
   <title>Cognitia API Docs</title>
@@ -7,16 +8,22 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app">Chargement...</div>
+  <div id="app">Loading...</div>
   <script>
-    window.$docsify = {
-      name: 'Cognitia API',
-      repo: '',
-      loadSidebar: true,
-      subMaxLevel: 2,
-      search: 'auto'
-    };
+  window.$docsify = {
+    name: 'Cognitia API',
+    repo: '',
+    loadSidebar: true,
+    darklightTheme: {
+      defaultTheme: 'dark', // ou 'light'
+      toggleBtn: true,
+      siteFont: 'PT Sans',
+      codeFontFamily: 'Monaco, Courier New, monospace',
+      bodyFontSize: '16px',
+    }
+  }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"></script>
 </body>
 </html>
