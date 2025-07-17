@@ -5,82 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cognitia API Docs</title>
 
-  <!-- Thème léger et propre -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" id="theme-style" />
+  <!-- Thème Docsify dark/light -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css" />
 
   <style>
     :root {
-      --main-color: #6366f1;
-      --font-family: 'Inter', sans-serif;
+      --theme-color: #6366f1;
     }
 
     body {
-      font-family: var(--font-family);
+      font-family: 'Inter', sans-serif;
       font-size: 16px;
-    }
-
-    /* Bouton Dark Mode */
-    .theme-toggle {
-      position: fixed;
-      bottom: 1rem;
-      right: 1rem;
-      background: var(--main-color);
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      z-index: 1000;
-    }
-
-    /* Dark Mode Styling */
-    body.dark {
-      background-color: #1e1e1e;
-      color: #e0e0e0;
-    }
-
-    body.dark .sidebar {
-      background-color: #2c2c2c;
-    }
-
-    body.dark a {
-      color: #9ab;
     }
   </style>
 </head>
 <body>
-  <div id="app">Chargement...</div>
-  <button class="theme-toggle" onclick="toggleTheme()">🌓 Thème</button>
+  <div id="app"></div>
 
   <script>
-    // Config Docsify
     window.$docsify = {
       name: 'Cognitia API',
       repo: '',
       loadSidebar: true,
-      fallbackSidebar: true,
+      loadNavbar: false,
       subMaxLevel: 2,
-      themeColor: '#6366f1'
-    };
-
-    // Dark mode toggle
-    function toggleTheme() {
-      const body = document.body;
-      const currentTheme = body.classList.contains('dark');
-      body.classList.toggle('dark', !currentTheme);
-      localStorage.setItem('theme', !currentTheme ? 'dark' : 'light');
-    }
-
-    // Charger le thème sauvegardé
-    (function() {
-      if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark');
+      themeColor: '#6366f1',
+      darklightTheme: {
+        defaultTheme: 'dark',
+        toggleBtn: true,
+        siteFont: 'Inter, sans-serif',
+        codeFontFamily: 'Monaco, Courier New, monospace',
+        bodyFontSize: '16px',
       }
-    })();
+    };
   </script>
 
-  <!-- Docsify -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Docsify core -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+
+  <!-- Plugin darklight -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"></script>
+
+  <!-- Patch pour corriger le scroll sur les ancres -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function adjustAnchorScroll() {
+        if (window.location.hash) {
+          setTimeout(function () {
+            const target = document.getElementById(window.location.hash.slice(1));
+            if (target) {
+              const yOffset = -20; // Ajuste si besoin
+              const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+              window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+          }, 200);
+        }
+      }
+
+      window.addEventListener('hashchange', adjustAnchorScroll);
+      adjustAnchorScroll();
+    });
+  </script>
 </body>
 </html>
-
