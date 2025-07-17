@@ -55,9 +55,9 @@ curl -X POST https://api.cognitia.ai/v1/analyze-sentiment \
 
 | Feature            | Endpoint                  | Docs                                        |
 | ------------------ | ------------------------- | ------------------------------------------- |
-| Sentiment Analysis | `POST /analyze-sentiment` | [Read the docs →](./endpoints/sentiment.md) |
-| Summarization      | `POST /summarize`         | [Read the docs →](./endpoints/summarize.md) |
-| Bias Detection     | `POST /detect-bias`       | [Read the docs →](./endpoints/bias.md)      |
+| Sentiment Analysis | `POST /analyze-sentiment` | [Read the docs →](/endpoints/sentiment.md) |
+| Summarization      | `POST /summarize`         | [Read the docs →](/endpoints/summarize.md) |
+| Bias Detection     | `POST /detect-bias`       | [Read the docs →](/endpoints/bias.md)      |
 
 ---
 
@@ -88,7 +88,7 @@ Check out the [FAQ page](./faq.md) for answers to common questions.
 
 - Contact: <support@cognitia.ai>
 
-- FAQ: [See common issues](./faq.md)
+- FAQ: [See common issues](/faq.md)
 
 - Status page: [status.cognitia.ai](https://status.cognitia.ai)
 
