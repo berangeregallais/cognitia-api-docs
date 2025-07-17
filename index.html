@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cognitia API Docs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+  <!-- Thème Docsify dark/light -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css" />
+
+  <style>
+    :root {
+      --theme-color: #6366f1;
+    }
+  </style>
 </head>
 <body>
-  <div id="app">Loading...</div>
+  <div id="app"></div>
+
   <script>
-  window.$docsify = {
-    name: 'Cognitia API',
-    repo: '',
-    loadSidebar: true,
-    darklightTheme: {
-      defaultTheme: 'dark',
-      toggleBtn: true,
-      siteFont: 'PT Sans',
-      codeFontFamily: 'Monaco, Courier New, monospace',
-      bodyFontSize: '16px',
+    window.$docsify = {
+      name: 'Cognitia API',
+      repo: '',
+      loadSidebar: true,
+      loadNavbar: false,
+      subMaxLevel: 2,
+      themeColor: '#6366f1',
+      darklightTheme: {
+        defaultTheme: 'dark',
+        toggleBtn: true,
+        siteFont: 'Inter, sans-serif',
+        codeFontFamily: 'Monaco, Courier New, monospace',
+        bodyFontSize: '16px',
+      }
     }
-  }
   </script>
+
+  <!-- Docsify core -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- Plugin darklight -->
   <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"></script>
 </body>
 </html>
