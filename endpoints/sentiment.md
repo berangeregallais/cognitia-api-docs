@@ -116,6 +116,6 @@ curl -X POST https://api.cognitia.ai/v1/analyze-sentiment \
 Looking for bias detection or summarization?
 Check out our other endpoints:
 
-- [Summarize](./summarize.md)
+- [Summarize](/endpoints/summarize.md)
 
-- [Detect Bias](./bias.md)
+- [Detect Bias](/endpoints/bias.md)
