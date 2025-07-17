@@ -44,7 +44,7 @@ No, the API is not available for public or private use. This project is strictly
 
 ## 🧪 Can I test this API?
 
-You can import the [OpenAPI spec](./openapi.json) into Postman to simulate API calls and explore the endpoints.
+You can import the [OpenAPI spec](./openapi-cognitia.json) into Postman to simulate API calls and explore the endpoints.
 
 ---
 
