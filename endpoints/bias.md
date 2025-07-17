@@ -120,6 +120,6 @@ curl -X POST https://api.cognitia.ai/v1/detect-bias \
 
 Explore other endpoints:
 
-- [Sentiment Analysis](./sentiment.md)
+- [Sentiment Analysis](/endpoints/sentiment.md)
 
-- [Summarize Text](./summarize.md)
+- [Summarize Text](/endpoints/summarize.md)
